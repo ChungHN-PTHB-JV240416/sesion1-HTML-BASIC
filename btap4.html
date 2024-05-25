@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let chuoiNhapVao = prompt("Nhập vào chuỗi:");
+      let chuoiDoiKieu = "";
+      for (let i = 0; i < chuoiNhapVao.length; i++) {
+        let kiTu = chuoiNhapVao.charAt(i);
+        if (kiTu === kiTu.toUpperCase()) {
+          chuoiDoiKieu += kiTu.toLowerCase();
+        } else {
+          chuoiDoiKieu += kiTu.toUpperCase();
+        }
+      }
+      console.log(chuoiDoiKieu);
+    </script>
+  </body>
+</html>

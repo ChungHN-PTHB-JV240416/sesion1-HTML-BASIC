@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let soNhapVao = prompt("Nhập vào một số:");
+      let ketQua = "";
+
+      let laSoChan = parseInt(soNhapVao[0]) % 2 === 0;
+
+      for (let i = 1; i < soNhapVao.length; i++) {
+        if (parseInt(soNhapVao[i]) % 2 === 0) {
+          if (laSoChan) {
+            ketQua += "-" + soNhapVao[i];
+          } else {
+            ketQua += soNhapVao[i];
+          }
+
+          laSoChan = true;
+        } else {
+          ketQua += soNhapVao[i];
+
+          laSoChan = false;
+        }
+      }
+
+      console.log(ketQua);
+    </script>
+  </body>
+</html>
